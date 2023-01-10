@@ -27,13 +27,13 @@ function TimerCounter() {
       </div>
       <div className="buttons">
         <div>
-          <button onClick={() => start()}>🏃‍♂️</button>
+          <button onClick={start}>🏃‍♂️</button>
         </div>
         <div>
-          <button onClick={() => reset()}>🔄</button>
+          <button onClick={reset}>🔄</button>
         </div>
         <div>
-          <button onClick={() => stop()}>⏹</button>
+          <button onClick={stop}>⏹</button>
         </div>
       </div>
     </div>

@@ -24,13 +24,13 @@ function App() {
       </div>
       <div className="buttons">
         <div>
-          <button onClick={() => decrease()}>➖</button>
+          <button onClick={decrease}>➖</button>
         </div>
         <div>
-          <button onClick={() => reset()}>🔄</button>
+          <button onClick={reset}>🔄</button>
         </div>
         <div>
-          <button onClick={() => increase()}>➕</button>
+          <button onClick={increase}>➕</button>
         </div>
       </div>
     </div>
