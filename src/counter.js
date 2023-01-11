@@ -24,10 +24,14 @@ function App() {
       </div>
       <div className="buttons">
         <div>
-          <button onClick={decrease}>➖</button>
+          <button onClick={decrease} disabled={counter === 0}>
+            ➖
+          </button>
         </div>
         <div>
-          <button onClick={reset}>🔄</button>
+          <button onClick={reset} disabled={counter === 0}>
+            🔄
+          </button>
         </div>
         <div>
           <button onClick={increase}>➕</button>
