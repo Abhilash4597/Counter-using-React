@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "./index.css";
+import { useState } from 'react';
+import './index.css';
 
 function App() {
   const [counter, setCounter] = useState(0);
@@ -9,7 +9,11 @@ function App() {
   };
 
   const decrease = () => {
-    setCounter(counter - 1);
+    if (counter > 0) {
+      setCounter(counter - 1);
+    } else {
+      document.getElementsByTagName('button').addAtributes('disabled');
+    }
   };
 
   const reset = () => {
@@ -24,7 +28,7 @@ function App() {
       </div>
       <div className="buttons">
         <div>
-          <button onClick={decrease} disabled={counter === 0}>
+          <button onClick={decrease}>
             ➖
           </button>
         </div>
