@@ -5,15 +5,17 @@ function CounterStr() {
   let [countStr, setCountStr] = useState([5]);
 
   function increase() {
-    let str = [...countStr, countStr[countStr.length - 1] + 1]
-    setCountStr(str);
+    let increaseStr = [...countStr, countStr[countStr.length - 1] + 1];
+    setCountStr(increaseStr);
   }
 
   function decrease() {
-
+    let decreaseStr = [...countStr.slice(0,countStr.length-1)];
+    setCountStr(decreaseStr);
   }
-  function reset() {
 
+  function reset() {
+    
   }
 
   return (
