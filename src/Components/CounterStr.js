@@ -15,7 +15,7 @@ function CounterStr() {
   }
 
   function reset() {
-    setCountStr(0);
+    setCountStr([0]);
   }
 
   return (
